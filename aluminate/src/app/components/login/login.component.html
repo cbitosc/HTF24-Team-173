@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<div class="card flex justify-content-center">
+<div class="card flex justify-content-center">
+    <p-floatLabel>
+        <input pInputText id="username" [(ngModel)]="userName" />
+        <label for="username">Username</label>
+    </p-floatLabel>
+</div>
+    <div class="card flex justify-content-center">
+    <p-floatLabel>
+        <p-password [(ngModel)]="password" [feedback]="false" />
+        <label for="password">Password</label>
+    </p-floatLabel>
+    </div>
+    <div class="card flex justify-content-center">
+    <button 
+        pButton 
+        pRipple 
+        label="Submit" 
+        class="p-button-success">
+    </button>
+</div>
+</div>
