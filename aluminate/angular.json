@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "externalDependencies": [
+              "node_modules/primeng/resources/primeng.min.css"
+            ],
             "outputPath": "dist/aluminate",
             "index": "src/index.html",
             "browser": "src/main.ts",
