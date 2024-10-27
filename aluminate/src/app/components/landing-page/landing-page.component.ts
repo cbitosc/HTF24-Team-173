@@ -1,4 +1,6 @@
 import { Component, input } from '@angular/core';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-landing-page',
