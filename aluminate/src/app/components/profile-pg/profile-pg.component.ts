@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './profile-pg.component.scss'
 })
 export class ProfilePgComponent {
-  firstName= '';
+  firstName= 'CBIT ALUMNI';
   lastName= '';
   constructor() {
     firstName: '';
