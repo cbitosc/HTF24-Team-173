@@ -3,7 +3,7 @@ import { Component, input } from '@angular/core';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [InputTextModule, FormsModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
