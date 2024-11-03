@@ -1,0 +1,193 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: #1a2a6c;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Stick to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #ffdd40;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.profile:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.profile-dropdown a:hover {
+    background: #f0f0f0;
+}
+
+/* Main Layout */
+.events-page-container {
+    display: flex;
+    padding-top: 70px; /* Leave space for the fixed navbar */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px; /* Set fixed width for sidebar */
+    padding: 20px;
+    background: #f9f9f9;
+    border-right: 1px solid #ccc;
+    border-radius: 10px; /* Rounded edges */
+    position: fixed; /* Fix the sidebar */
+    top: 70px; /* Position below the navbar */
+    height: calc(100vh - 70px); /* Full height of viewport minus navbar height */
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.filter-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter-options li {
+    padding: 10px 15px; /* Added horizontal padding */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition */
+    border-radius: 8px; /* Rounded edges for hover effect */
+}
+
+.filter-options li:hover {
+    background-color: #ffdd40; /* Change background color on hover */
+    color: #333; /* Optional: change text color on hover */
+}
+
+/* Events Section */
+.events {
+    padding: 20px;
+    margin-left: 270px; /* Leave space for the fixed sidebar */
+    flex-grow: 1; /* Allow content to grow and fill available space */
+}
+
+.events-description {
+    margin-bottom: 20px;
+}
+
+.events-grid {
+    display: flex;
+    flex-direction: column; /* Stack event cards vertically */
+    gap: 20px;
+}
+
+.event-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set to 100% to occupy full width */
+}
+
+.event-card img {
+    width: 100%;
+    height: 350px; /* Adjust height of event image */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+/* Footer */
+.footer {
+    background: #1a2a6c;
+    color: #fff;
+    padding: 30px 0; /* Increased height of footer */
+    text-align: center; /* Center text */
+    font-size: 0.9rem;
+    width: 100%; /* Ensure the footer occupies full width */
+    position: relative; /* Keep it in normal flow */
+    left: 0; /* Align to left edge */
+}
+.footer .social-links {
+    margin-top: 10px; /* Add some space between the text and social links */
+}
+
+.footer .social-links a {
+    color: #ffdd40;
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}

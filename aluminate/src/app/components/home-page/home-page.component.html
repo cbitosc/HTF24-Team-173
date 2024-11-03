@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBIT Alumni Home</title>
+  <link rel="stylesheet" href="home-page.component.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar with Profile Button and Dropdown -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">CBIT Alumni</h1>
+      <nav class="nav-links">
+        <a href="#events">Events</a>
+        <a href="#donations">Donations</a>
+        <a href="#directory">Directory</a>
+      </nav>
+      
+      <div class="profile">
+        <img src="https://w0.peakpx.com/wallpaper/208/752/HD-wallpaper-whatsapp-dp-cartoon.jpg" alt="Profile" class="profile-icon" onerror="this.onerror=null;this.src='blank-profile.jpg';">
+        <div class="profile-dropdown">
+          <a href="#edit-profile">Edit Profile</a>
+          <a href="#logout"  onClick=logout() >Logout</a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <!-- Success Stories Section -->
+  <section id="success-stories" class="success-stories">
+    <h2>Alumni Success Stories</h2>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img src="alumni1.jpg" alt="Alumni 1">
+        <h3>Dr. A. P. J. Abdul Kalam</h3>
+        <p>Former President of India, renowned scientist, and inspirational leader.</p>
+      </div>
+      <div class="story-card">
+        <img src="alumni2.jpg" alt="Alumni 2">
+        <h3>Satya Nadella</h3>
+        <p>CEO of Microsoft, driving innovation in technology globally.</p>
+      </div>
+      <div class="story-card">
+        <img src="alumni3.jpg" alt="Alumni 3">
+        <h3>Sundar Pichai</h3>
+        <p>CEO of Google, leading advancements in global information technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="events">
+    <h2>Upcoming Events</h2>
+    <div class="events-list">
+      <div class="event-card">
+        <img src="reunion.jpg" alt="Annual Reunion">
+        <h3>Annual Alumni Reunion</h3>
+        <p>March 15, 2024 | CBIT Campus</p>
+        <p>Reconnect with old friends and celebrate our shared journey.</p>
+      </div>
+      <div class="event-card">
+        <img src="webinar.jpg" alt="Webinar">
+        <h3>Alumni Webinar Series</h3>
+        <p>April 5, 2024 | Online</p>
+        <p>Stay updated with alumni expert insights in various industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donations Section -->
+  <section id="donations" class="donations">
+    <h2>Support CBIT</h2>
+    <p>Your contributions help us fund scholarships, enhance facilities, and support ongoing research.</p>
+    <button class="donate-button">Make a Donation</button>
+  </section>
+
+  <!-- Directory Section -->
+  <section id="directory" class="directory">
+    <h2>Connect with Fellow Alumni</h2>
+    <p>Explore our alumni directory to find and reconnect with friends, mentors, and colleagues.</p>
+    <button class="directory-button">Explore Directory</button>
+  </section>
+
+  <!-- Footer with Social Media Links -->
+  <footer class="footer">
+    <p>&copy; 2024 CBIT Alumni Association | Follow us on:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.twitter.com">Twitter</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>

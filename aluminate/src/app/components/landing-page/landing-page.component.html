@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBIT Alumni Association</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar with Login Button -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">CBIT Alumni</h1>
+      <p-menubar [model]="menuItems" class="nav-links">
+        <a class="p-button-outlined login-button" routerLink="/login">Log In</a>
+      </p-menubar>
+    </div>
+  </header>
+
+  <br><br>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the CBIT Alumni Association</h1>
+      <p>Connecting, Supporting, and Inspiring Alumni Worldwide</p>
+      <a class="p-button-outlined login-button" routerLink="/register" >Join Now</a>
+    </div>
+  </section>
+
+  <!-- About the Alumni Association -->
+  <section id="about" class="about-us">
+    <h2>About CBIT Alumni Association</h2>
+    <p>The CBIT Alumni Association connects graduates, empowers professional growth, and fosters lifelong relationships.</p>
+  </section>
+
+  <!-- Featured Alumni Section with Images -->
+  <section class="featured-alumni">
+    <h2>Meet Our Distinguished Alumni</h2>
+    <div class="alumni-grid">
+      <p-card header="Dr. A. P. J. Abdul Kalam" subheader="Former President of India" class="alumni-card">
+        <img src="alumni1.jpg" alt="Alumni 1" style="width: 100%">
+      </p-card>
+      <p-card header="Satya Nadella" subheader="CEO, Microsoft" class="alumni-card">
+        <img src="alumni2.jpg" alt="Alumni 2" style="width: 100%">
+      </p-card>
+      <p-card header="Sundar Pichai" subheader="CEO, Google" class="alumni-card">
+        <img src="alumni3.jpg" alt="Alumni 3" style="width: 100%">
+      </p-card>
+    </div>
+  </section>
+
+  <!-- Benefits of Joining -->
+  <section id="benefits" class="benefits">
+    <h2>Why Join the Alumni Association?</h2>
+    <ul>
+      <li>Exclusive networking events and reunions.</li>
+      <li>Career advancement resources and job board.</li>
+      <li>Mentorship opportunities with distinguished alumni.</li>
+    </ul>
+  </section>
+
+  <!-- Footer with Social Media Links -->
+  <footer class="footer">
+    <p>&copy; 2024 CBIT Alumni Association | Follow us on:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.twitter.com">Twitter</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>

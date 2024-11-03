@@ -1,0 +1,228 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #1a2a6c;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .nav-links a:hover {
+    color: #ffdd40;
+  }
+  
+  .profile {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .profile:hover .profile-dropdown {
+    display: block;
+  }
+  
+  .profile-dropdown a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .profile-dropdown a:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Success Stories Section */
+  .success-stories {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .success-stories h2 {
+    font-size: 2.2rem;
+    color: #1a2a6c;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffdd40;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .stories-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .story-card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .story-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Events, Donations, and Directory Sections */
+  .events, .donations, .directory {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .events h2, .donations h2, .directory h2 {
+    font-size: 2.2rem;
+    color: #1a2a6c;
+    margin-bottom: 20px;
+  }
+  
+  .event-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .donate-button, .directory-button {
+    background: #ffdd40;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .donate-button:hover, .directory-button:hover {
+    background: #ffb300;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #1a2a6c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .footer .social-links a {
+    color: #ffdd40;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .profile {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder background color */
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .profile-icon[alt="Profile"]:not([src]) {
+    background-image: url('https://w0.peakpx.com/wallpaper/208/752/HD-wallpaper-whatsapp-dp-cartoon.jpg'); /* Default blank profile image */
+    background-size: cover;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .profile:hover .profile-dropdown {
+    display: block;
+  }
+  
+  .profile-dropdown a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .profile-dropdown a:hover {
+    background: #f0f0f0;
+  }
+  
+  
